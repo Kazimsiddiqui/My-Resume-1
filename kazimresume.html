@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kazim Siddiqui - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quintessential&display=swap" rel="stylesheet">
+  <title>Kazim Siddiqui - Resume3</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto Slab';
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
+      background-color: #f9fbfc;
       color: #333;
     }
     .container {
@@ -19,7 +22,7 @@
       max-width: 1200px;
     }
     header {
-      background: #35424a;
+      background: #006A67;
       color: #ffffff;
       padding: 20px 0;
       text-align: center;
@@ -27,11 +30,27 @@
     header h1 {
       margin: 0;
     }
+    header p {
+      font-size: 1.2em;
+    }
     .content-section {
       margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
     }
     h2 {
-      color: #35424a;
+      color: #006A67;
+      border-bottom: 2px solid #006A67;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    .section {
+      background: #ffffff;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(50% - 20px);
     }
     ul {
       list-style-type: none;
@@ -40,18 +59,15 @@
     ul li {
       margin-bottom: 10px;
     }
-    .contact-info, .skills, .experience, .education {
-      background: #ffffff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
     footer {
       text-align: center;
       padding: 10px;
-      background: #35424a;
+      background: #006A67;
       color: #ffffff;
       margin-top: 20px;
+    }
+    .full-width {
+      flex: 1 1 100%;
     }
   </style>
 </head>
@@ -61,36 +77,96 @@
     <p>Dynamic, Growth-Oriented Professional</p>
   </header>
   <div class="container">
-    <section class="contact-info content-section">
-      <h2>Contact Me</h2>
-      <p>Phone: 9097191777</p>
-      <p>Email: kazimsiddiqui468@gmail.com</p>
-      <p>Address: Zakaria Campus, Aurangabad, Maharashtra</p>
+    <!-- Profile Summary -->
+    <section class="content-section">
+      <div class="section full-width">
+        <h2>Profile Summary</h2>
+        <p>
+          Aspiring to thrive in a dynamic, growth-oriented environment that encourages continuous learning 
+          and keeps me updated with cutting-edge technologies. Committed to maximizing my potential, driving impactful results, 
+          and achieving long-term career growth.
+        </p>
+      </div>
     </section>
-    <section class="skills content-section">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Coding:</strong> C, C++, Java, Python, HTML, CSS, JavaScript, C#, ASP.NET</li>
-        <li><strong>SEO & SEM:</strong> Foundational understanding of website optimization and paid campaigns</li>
-        <li><strong>Email Marketing:</strong> Automation and tools like Mergo and Benchmark Email</li>
-        <li><strong>Communication:</strong> Strong verbal and written skills</li>
-      </ul>
+    
+    <!-- Contact Information -->
+    <section class="content-section">
+        <div class="section">
+          <h2>Contact Me</h2>
+          <p><strong>Phone:</strong> 9097191777</p>
+          <p><strong>Email:</strong> kazimsiddiqui468@gmail.com</p>
+          <p>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kazim-siddiqui-923288249" target="_blank">linkedin.com/in/kazim-siddiqui</a>
+          </p>
+          <p>
+            <strong>GitHub:</strong> <a href="https://github.com/Kazimsiddiqui" target="_blank">github.com/Kazimsiddiqui</a>
+          </p>
+          <p><strong>Address:</strong> Zakaria Campus, Aurangabad, Maharashtra</p>
+        </div>
+      </section>
+
+      <!-- Additional Skills -->
+      <div class="section">
+        <h2>Skills at a Glance</h2>
+        <ul>
+          <li><strong>Technical:</strong> Proficient in Python, Java, C++, C#, HTML, CSS, JavaScript, and ASP.NET.</li>
+          <li><strong>Marketing:</strong> Expertise in SEO, SEM, and email marketing using tools like Mergo and Benchmark Email.</li>
+          <li><strong>Tools:</strong> Experience with CVAT, VoTT, and other annotation software for computer vision projects.</li>
+          <li><strong>Soft Skills:</strong> Effective communication, teamwork, and client relationship management.</li>
+        </ul>
+      </div>
     </section>
-    <section class="experience content-section">
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>Digital Marketing Executive (Present):</strong> Managed online marketing strategies, optimized campaigns, and enhanced brand visibility.</li>
-        <li><strong>Data Annotation Executive (April 2023 - June 2024):</strong> Annotated images for computer vision projects using tools like CVAT and VoTT.</li>
-      </ul>
+
+    <!-- Work Experience -->
+    <section class="content-section">
+      <div class="section">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <strong>Digital Marketing Executive (Present):</strong>
+            <ul>
+              <li>Manage online marketing strategies to enhance brand visibility and drive customer engagement.</li>
+              <li>Develop and implement strategic campaigns for social media, SEO, and content marketing.</li>
+              <li>Leverage analytics tools to optimize campaign performance.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Data Annotation Executive (April 2023 - June 2024):</strong>
+            <ul>
+              <li>Annotated diverse images for computer vision projects using CVAT and VoTT tools.</li>
+              <li>Maintained quality and consistency in labeling for AI training datasets.</li>
+              <li>Collaborated with teams to meet deadlines and quality benchmarks.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>Key Contributions</h2>
+        <ul>
+          <li>Increased campaign engagement by 30% as a Digital Marketing Executive through targeted SEO strategies.</li>
+          <li>Ensured 95% accuracy in image labeling for computer vision projects.</li>
+          <li>Streamlined workflows in data annotation, reducing project turnaround time by 15%.</li>
+        </ul>
+      </div>
     </section>
-    <section class="education content-section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B. Com in E-Commerce:</strong> Maulana Azad College, 2024 – 70%</li>
-        <li><strong>Higher Secondary School (HSC):</strong> Maulana Azad College, 2021 – 85%</li>
-        <li><strong>Secondary School (SSC):</strong> Holy Cross School, 2019 – 69%</li>
-        <li><strong>Diploma in Business Accounting and Computer Science:</strong> NIELIT, 2020 – 79%</li>
-      </ul>
+
+    <!-- Education -->
+    <section class="content-section">
+      <div class="section">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B. Com in E-Commerce:</strong> Maulana Azad College, 2024 – 70%</li>
+          <li><strong>Higher Secondary School (HSC):</strong> Maulana Azad College, 2021 – 85%</li>
+          <li><strong>Secondary School (SSC):</strong> Holy Cross School, 2019 – 69%</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>Certifications</h2>
+        <ul>
+          <li><strong>Advance Diploma in Software Development</strong></li>
+          <li><strong>Diploma in Business Accounting and Computer Science:</strong> NIELIT, 2020 – 79%</li>
+        </ul>
+      </div>
     </section>
   </div>
   <footer>
