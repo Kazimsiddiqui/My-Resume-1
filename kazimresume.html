@@ -69,12 +69,64 @@
     .full-width {
       flex: 1 1 100%;
     }
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .bodytwo{
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #006A67;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      transition: .5s;
+    }
+    button:hover {
+      background-color: #90f1ee;
+      color: #333;
+    }
+    .optional {
+      font-size: 0.9em;
+      color: #555;
+    }
   </style>
+  <script>
+    function feedback()
+    {
+      alert("Thank you for sharing your thoughts! Your input means a lot to me.");
+    }
+  </script>
 </head>
 <body>
   <header>
     <h1>Kazim Siddiqui</h1>
-    <p>Dynamic, Growth-Oriented Professional</p>
+    <p>Full-Stack Developer | Expert in ASP.NET, C#, and MS SQL</p>
   </header>
   <div class="container">
     <!-- Profile Summary -->
@@ -168,6 +220,49 @@
         </ul>
       </div>
     </section>
+
+    <!-- Projects -->
+    <section class="content-section">
+      <div class="section">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong><a href="C:\Users\Nexabiz6\Downloads\flooring images\webdev\mywebsite.html">Nath velly school website</a></strong></li>
+          <li><strong>Fees collection webapplication in C#.</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="bodytow">
+      <h2 style="text-align:center;">Share Your Suggestions</h2>
+      <p style="text-align:center;">I value your feedback! Please share your ideas or suggestions to help me improve.</p>
+      
+      <form action="your-backend-script.php" method="POST">
+        <!-- Name Field -->
+        <label for="name">Name <span class="optional">(optional)</span></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 96%;">
+      
+        <!-- Email Field -->
+        <label for="email">Email <span class="optional">(optional)</span></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 96%;">
+      
+        <!-- Suggestions Field -->
+        <label for="suggestion">Your Suggestion:</label>
+        <textarea id="suggestion" rows="5" style="width: 96%; resize: vertical;" placeholder="Write your suggestion here..."></textarea>
+      
+        <!-- Specific Questions -->
+        <label for="improve">What do you think I can improve about my resume/portfolio?</label>
+        <textarea id="improve" name="improve" rows="3" style="width: 96%;resize: vertical;" placeholder="Your thoughts..."></textarea>
+      
+        <label for="skills">Are there any skills or experiences you’d suggest I focus on?</label>
+        <textarea id="skills" name="skills" rows="3" style="width: 96%;resize: vertical;" placeholder="Your thoughts..."></textarea>
+      
+        <label for="website">Any feedback about my website design or functionality?</label>
+        <textarea id="website" name="website" rows="3" style="width: 96%;resize: vertical;" placeholder="Your thoughts..."></textarea>
+      
+        <!-- Submit Button -->
+        <button type="submit" onclick="feedback()">Submit Suggestion</button>
+      </form>
+      </div>      
   </div>
   <footer>
     <p>&copy; 2024 Kazim Siddiqui. All rights reserved.</p>
